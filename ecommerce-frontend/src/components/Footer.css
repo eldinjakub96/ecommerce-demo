@@ -1,0 +1,49 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background-color: #282C34; /* Dark theme color */
+    color: #F0F1F6; /* Light text color */
+    padding: 2rem 0; /* Increased padding for better spacing */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+.footer .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8; /* Slightly faded text for a modern look */
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between links */
+}
+
+.footer-nav ul li {
+    margin: 0;
+}
+
+.footer-nav ul li a {
+    color: #F0F1F6; /* Matching link color */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+.footer-nav ul li a:hover {
+    color: #61DAFB; /* Highlight color */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}

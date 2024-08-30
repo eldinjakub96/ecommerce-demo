@@ -1,0 +1,73 @@
+/* src/pages/HomePage.css */
+
+/* Hero section styles */
+.hero {
+    background: #3498db; /* Example color, change as needed */
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  
+  /* Product categories styles */
+  .product-categories {
+    padding: 2rem 0;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  /* Featured products styles */
+  .featured-products {
+    padding: 2rem 0;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
