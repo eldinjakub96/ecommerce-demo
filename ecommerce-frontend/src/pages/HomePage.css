@@ -2,72 +2,124 @@
 
 /* Hero section styles */
 .hero {
-    background: #3498db; /* Example color, change as needed */
+    background-image: url('../assets/ecomm-store.avif'); /* Path to your image */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 4rem 0;
     text-align: center;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-text p {
-    font-size: 1.2rem;
-  }
-  
-  /* Product categories styles */
-  .product-categories {
-    padding: 2rem 0;
-  }
-  
-  .categories {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .category {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%;
-  }
-  
-  /* Featured products styles */
-  .featured-products {
-    padding: 2rem 0;
-  }
-  
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .product-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 0.5rem;
-  }
-  
-  .product-card h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-  
-  .product-card p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
+}
+
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Product categories styles */
+.product-categories {
+  padding: 2rem 0;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
+
+/* Featured products styles */
+.featured-products {
+  padding: 2rem 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* Center the cards horizontally */
+    padding: 1rem; /* Optional padding around the container */
+}
+
+.product-card {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Slightly more rounded corners */
+    overflow: hidden; /* Ensures child elements do not overflow the card's borders */
+    width: 200px; /* Fixed width */
+    text-align: center; /* Center text and other inline elements */
+    background-color: #fff; /* White background color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.product-card img {
+    width: 100%; /* Ensure image covers the width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Divider line between image and text */
+}
+
+.product-card h3 {
+    font-size: 1.2rem; /* Slightly larger font size for product names */
+    margin: 1rem 0 0.5rem; /* Margin around the title */
+    color: #333; /* Dark gray color for the text */
+}
+
+.product-card p {
+    font-size: 1rem; /* Standard font size for price */
+    color: #888; /* Gray color for the price text */
+    margin: 0; /* Remove default margin */
+    padding: 0 1rem 1rem; /* Padding at the bottom */
+}
+
+.featured-products h2 {
+    font-size: 2.5em; /* Increase the size of the heading */
+    font-family: 'Roboto', sans-serif; /* Change the font */
+    color: #333; /* Set a dark color for contrast */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add some spacing between the letters */
+    margin-top: 20px; /* Add some space at the top */
+    margin-bottom: 20px; /* Add space below the heading */
+    padding-bottom: 10px; /* Add some padding at the bottom */
+    border-bottom: 3px solid #007BFF; /* Add a blue underline */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Add a slight shadow for depth */
+}
+
+.featured-products h2::after {
+    content: ''; /* Adds an additional decoration */
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #007BFF; /* Same color as underline */
+    margin: 10px auto 0; /* Position the decoration */
+}
+
+.hero-text {
+    margin-left: auto; /* Push the text to the right */
+    margin-right: 10px; /* Set margin-right to 0 to align text to the right edge */
+    padding: 48px 32px; /* Add padding around the text */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    max-width: 30%; /* Optional: Set a maximum width for the text block */
+    text-align: left; /* Align text to the left within the text block */
+}

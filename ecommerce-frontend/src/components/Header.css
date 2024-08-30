@@ -1,50 +1,76 @@
-/* src/styles/Header.css */
-
-.header {
-    background-color: #007BFF; /* Bright blue color */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
-}
-
-.header .container {
+/* Flexbox for the header container */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures header stays on top */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 700;
+/* Flexbox for the nav container */
+header nav {
+    margin-left: auto; /* Pushes the navigation to the right side */
 }
 
+/* Flexbox for the nav items */
 .nav {
     display: flex;
-}
-
-.nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
 }
 
-.nav ul li {
-    margin: 0 1rem;
+/* Style for each nav item */
+.nav li {
+    margin: 0 15px;
 }
 
-.nav ul li a {
-    color: #fff;
+/* Style for the nav links */
+.nav li a {
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
 }
 
-.nav ul li a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
+/* Hover effect for nav links */
+.nav li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Adds a hover effect */
+}
+
+/* Style for the logo */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-left: 0; /* Reset margin for small screens */
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
 }

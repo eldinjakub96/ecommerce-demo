@@ -6,20 +6,19 @@ import './Header.css'; // Import header-specific styles
 // Header component
 const Header = () => {
   return (
-    <header className="header">
-      <div className="container">
-        <h1>My E-Commerce Site</h1>
-        <nav className="nav">
-          <ul>
-            {/* Navigation links */}
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header>
+    <div class="logo">
+        <a href="#">My Store</a>
+    </div>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
   );
 };
 
